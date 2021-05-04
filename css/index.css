@@ -4,11 +4,12 @@ body {
 
 
 /* Style the header with a grey background and some padding */
+
 .header {
   overflow: hidden;
-  background-color:#EEEEEE;
   padding: 20px 20px;
   float: inline-start;
+  outline: 1px solid red;
 }
 
 /* Style the header links */
@@ -21,12 +22,14 @@ body {
   font-size: 18px; 
   line-height: 25px;
   border-radius: 4px;
+  outline: 1px solid red;
 }
 
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
 .header a.logo {
   font-size: 25px;
   font-weight: bold;
+  outline: 1px solid red;
 }
 
 /* Change the background color on mouse-over */
@@ -45,9 +48,13 @@ body {
 .header-right {
   height: 50%;
   float: right;
-
 }
 
+.hero-image {
+  display: flex;
+  align-items: flex-start;
+  outline: 1px solid red;
+}
 
 
 /* Typography CSS */
@@ -56,18 +63,21 @@ h2 {
   font-size: 60px;
   margin: 0px 0px;
   color: lightgrey;
+  outline: 1px solid red;
 }
 
 h3 {
   font-size: 32px;
   font-weight: 300;
   margin: 0px 0px;
+  outline: 1px solid red;
 }
 
 h4 {
   color: white;
   font-weight: 400;
   font-size: 22px;
+  outline: 1px solid red;
 }
 
 
@@ -77,10 +87,16 @@ h4 {
   font-weight: 300;
   margin: 0px 0px;
   color: #636364;
+  outline: 1px solid red;
 }
 
-
-
+/*About section*/
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 200px;
+  outline: 1px solid red;
+}
 
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */ 
@@ -123,34 +139,57 @@ top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
 color: white;
+outline: 1px solid red;
 }
 
-/* Highlighted Work */
-.row {
-  display: flex;
+/*Branded Buttons*/
+.button-light {
+  transform: scale(0.5);
 }
+
+
+/* Highlighted Work */
+.about-row {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  outline: 1px solid red;
+}
+
+.mission-row {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  outline: 1px solid red;
+}
+.description-row {
+  margin-top: 80px;
+  outline: 1px solid red;
+}
+
+.process-row {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  outline: 1px solid red;
+}
+
 
 h4 {
   color: #2B2B2B;
+  outline: 1px solid red;
 }
 
 .column {
   flex: 50%;
+  outline: 1px solid red;
 }
 .column1 {
   float: left;
   width: 50%;
   padding: 20px;
   color: #2B2B2B;
-}
-.column1b {
-  float: inline-end;
-  padding: 20px;
-  padding-left: 50px;
-  content: "";
-  display: table;
-  clear: both;
-  color: #2B2B2B;
+  outline: 1px solid red;
 }
 .column2 {
   float: right;
@@ -160,6 +199,7 @@ h4 {
   display: table;
   clear: both;
   color: #2B2B2B;
+  outline: 1px solid red;
 }
 .column3 {
   float: right;
@@ -169,6 +209,45 @@ h4 {
   display: table;
   clear: both;
   color: #2B2B2B;
+  outline: 1px solid red;
+}
+.heading-row {
+  float: left;
+  width: 100%;
+  padding: 20px;
+  color: #2B2B2B;
+  outline: 1px solid red;
+}
+
+.process-research-row {
+  float: inline-end;
+  padding: 20px;
+  padding-left: 50px;
+  content: "";
+  display: table;
+  clear: both;
+  color: #2B2B2B;
+  outline: 1px solid red;
+}
+.process-ideation-row {
+  float: inline-end;
+  padding: 20px;
+  padding-left: 50px;
+  content: "";
+  display: table;
+  clear: both;
+  color: #2B2B2B;
+  outline: 1px solid red;
+}
+.process-execution-row {
+  float: inline-end;
+  padding: 20px;
+  padding-left: 50px;
+  content: "";
+  display: table;
+  clear: both;
+  color: #2B2B2B;
+  outline: 1px solid red;
 }
 
 
@@ -179,9 +258,10 @@ h4 {
 /* Slideshow */
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 100%;
   position: relative;
   margin: auto;
+  outline: 1px solid red;
 }
 
 /* Caption text */
@@ -256,6 +336,7 @@ h4 {
   width: 980px;
   border: 1px solid;
   color: #2B2B2B;
+  outline: 1px solid red;
   }
   
   .Footer_inner_left{
@@ -265,6 +346,7 @@ h4 {
   Float: left;
   display:inline;
   color: #2B2B2B;
+  outline: 1px solid red;
   }
   
   .Footer_inner_right{
@@ -273,4 +355,5 @@ h4 {
   Float: right;
   display:inline;
   color: #2B2B2B;
+  outline: 1px solid red;
   }
