@@ -180,6 +180,26 @@ h4 {
   outline: 1px solid red;
 }
 
+
+
+#column {
+  margin: 0px 5px;
+  display: grid;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "column1"
+  "column2"
+  "heading-row"
+  "description-row"
+  "process-research-row"
+  "process-ideation-row"
+  "process-execution-row"
+  ;
+}
+
+
+
 .column {
   flex: 50%;
   outline: 1px solid red;
@@ -318,8 +338,8 @@ h4 {
 }
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
+@media only screen and (max-width: 600px) {
+  .text {font-size: 12px}
 }
 
 
