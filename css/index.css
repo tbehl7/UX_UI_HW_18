@@ -5,50 +5,49 @@ body {
 
 /* Style the header with a grey background and some padding */
 
-.header {
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mobile-container {
+  margin: auto;
+  background-color: #555;
+  color: white;
+}
+
+.topnav {
   overflow: hidden;
-  padding: 20px 20px;
-  float: inline-start;
-  outline: 1px solid red;
+  background-color: #EEEEEE;
+  position: relative;
 }
 
-/* Style the header links */
-.header a {
-  float: left;
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
   color: #2B2B2B;
-  text-align: center;
-  padding: 12px;
+  padding: 14px 16px;
   text-decoration: none;
-  font-size: 18px; 
-  line-height: 25px;
-  border-radius: 4px;
-  outline: 1px solid red;
+  font-size: 17px;
+  display: block;
 }
 
-/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-.header a.logo {
-  font-size: 25px;
-  font-weight: bold;
-  outline: 1px solid red;
+.topnav a.icon {
+  display: inline-flex;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
-/* Change the background color on mouse-over */
-.header a:hover {
-  background-color: none;
-  color: darkgrey;
+.topnav a:hover {
+  color: lightgrey;
 }
 
-/* Style the active/current link*/
-.header a.active {
-  background-color: none;
-  color: lightslategray;
+.active {
+  color: rgb(255, 0, 0);
 }
 
-/* Float the link section to the right */
-.header-right {
-  height: 50%;
-  float: right;
-}
 
 .hero-image {
   display: flex;
@@ -160,6 +159,9 @@ outline: 1px solid red;
   display: flex;
   margin-top: 20px;
   margin-bottom: 50px;
+  padding-top: 50;
+  padding-bottom: 50px;
+  background-color: #EEEEEE;
   outline: 1px solid red;
 }
 .description-row {
@@ -212,7 +214,7 @@ h4 {
   outline: 1px solid red;
 }
 .column2 {
-  float: right;
+  display: inline-flex;
   padding: 20px;
   padding-left: 50px;
   content: "";
@@ -271,16 +273,20 @@ h4 {
 }
 
 
-
-
-
-
 /* Slideshow */
 /* Slideshow container */
+.slideshow-title {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 25px;
+  padding-left: 25px;
+}
+
 .slideshow-container {
   max-width: 100%;
   position: relative;
   margin: auto;
+  background-color: #EEEEEE;
   outline: 1px solid red;
 }
 
