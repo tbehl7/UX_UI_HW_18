@@ -89,6 +89,24 @@ h4 {
   outline: 1px solid red;
 }
 
+
+#headline {
+  background-color: rgba(255,255,255,0.8);
+  border-bottom: 5px solid #FF6200;
+  position: absolute;
+  right: 0px;
+  top: 0;
+  bottom: 0;
+  padding: 50px;
+  max-width: 550px;
+  z-index: 100;
+}
+
+
+.button-dark {
+  display: inline;
+}
+
 /*About section*/
 .wrapper {
   display: grid;
@@ -182,29 +200,19 @@ h4 {
   outline: 1px solid red;
 }
 
-
-
-#column {
-  margin: 0px 5px;
-  display: grid;
-  grid-template-rows: 300px 300px 300px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: 
-  "column1"
-  "column2"
-  "heading-row"
-  "description-row"
-  "process-research-row"
-  "process-ideation-row"
-  "process-execution-row"
-  ;
+.columnImage {
+  float: left;
+  width: 50%;
+  padding: 20px;
+  color: #2B2B2B;
+  outline: 1px solid red;
 }
-
-
-
 .column {
   flex: 50%;
   outline: 1px solid red;
+  display: flex;
+  flex-direction: column;
+
 }
 .column1 {
   float: left;
@@ -270,6 +278,10 @@ h4 {
   clear: both;
   color: #2B2B2B;
   outline: 1px solid red;
+}
+.processCallout {
+  display: flex;
+  flex-direction: row;
 }
 
 
@@ -343,16 +355,33 @@ h4 {
   to {opacity: 1}
 }
 
+
+/* On larger screens, decrease text size */
+@media only screen and (max-width: 1000px) {
+  #column {
+    display: none;
+  }
+  .icons {
+    margin-left: auto;
+  }
+}
+
+
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 600px) {
   .text {font-size: 12px}
 }
-
-
-
-
-
-
+#column {
+  grid-template-rows: 300px 300px 300px 300px 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "column"
+      "process-research-row"
+      "process-ideation-row"
+      "process-execution-row"
+      "desks"
+    ;
+}
 
 
 /* Footer */
