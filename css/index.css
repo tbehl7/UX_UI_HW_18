@@ -168,6 +168,7 @@ outline: 1px solid red;
 /* Highlighted Work */
 .about-row {
   display: flex;
+
   margin-top: 20px;
   margin-bottom: 50px;
   outline: 1px solid red;
@@ -201,7 +202,8 @@ h4 {
 }
 
 .columnImage {
-  float: left;
+  display: flex;
+  flex-direction: column;
   width: 50%;
   padding: 20px;
   color: #2B2B2B;
@@ -210,19 +212,19 @@ h4 {
 .column {
   flex: 50%;
   outline: 1px solid red;
-  display: flex;
-  flex-direction: column;
+  
 
 }
 .column1 {
-  float: left;
+  display: flex;
   width: 50%;
   padding: 20px;
   color: #2B2B2B;
   outline: 1px solid red;
 }
 .column2 {
-  display: inline-flex;
+  display: flex;
+  flex-direction: column;
   padding: 20px;
   padding-left: 50px;
   content: "";
@@ -232,7 +234,7 @@ h4 {
   outline: 1px solid red;
 }
 .column3 {
-  float: right;
+  display: flex;
   padding: 20px;
   padding-left: 50px;
   content: "";
@@ -359,7 +361,17 @@ h4 {
 /* On larger screens, decrease text size */
 @media only screen and (max-width: 1000px) {
   #column {
-    display: none;
+    margin: 0px 5%;
+    display: grid;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "about-row"
+    "mission-row"
+    "process-row"
+    "Footer_outer"
+    "Footer_inner_left"
+    ;
   }
   .icons {
     margin-left: auto;
@@ -372,14 +384,11 @@ h4 {
   .text {font-size: 12px}
 }
 #column {
+
   grid-template-rows: 300px 300px 300px 300px 300px;
     grid-template-columns: 1fr;
     grid-template-areas:
       "column"
-      "process-research-row"
-      "process-ideation-row"
-      "process-execution-row"
-      "desks"
     ;
 }
 
